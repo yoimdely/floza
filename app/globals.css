@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg: #05070D; --glass: rgba(255,255,255,0.08); }
+html, body { height: 100%; }
+body { @apply bg-dark text-white; background: radial-gradient(1200px 800px at 10% 10%, #0e1a2b 0%, #05070d 60%) no-repeat; }
+.container { @apply max-w-7xl mx-auto px-4 md:px-6; }
+.glass { background: var(--glass); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 15px 40px rgba(0,0,0,.25); }
+.gradient-text { background: linear-gradient(90deg,#8ef9b8 0%, #30d086 40%, #35e3b0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+a { @apply text-white; }
